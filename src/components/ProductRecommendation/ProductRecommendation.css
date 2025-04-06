@@ -1,0 +1,125 @@
+/* ProductRecommendation.css */
+
+.product-recommendation {
+  padding: 4rem 0;
+  background-color: #f8faff;
+}
+
+.product-container {
+  
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: #7f8c8d;
+  margin-bottom: 3rem;
+  font-size: 1.1rem;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(3 , 1fr);
+  gap: 3rem;
+}
+
+.product-card {
+  background: white;
+  border-radius: 12px;
+  height: rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+  border: 1px solid #e0e6ed;
+}
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.product-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.product-content {
+  flex-grow: 1;
+}
+
+.product-name {
+  font-size: 1.3rem;
+  color: #2c3e50;
+  margin-bottom: 0.75rem;
+}
+
+.product-description {
+  color: #7f8c8d;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+}
+
+.product-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.meta-item {
+  background: #f1f5f9;
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+}
+
+.risk-low {
+  color: #27ae60;
+}
+
+.risk-medium {
+  color: #f39c12;
+}
+
+.risk-high {
+  color: #e74c3c;
+}
+
+.invest-button {
+  background: linear-gradient(135deg, #3498db, #2c3e50);
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  height: 3rem;
+}
+.invest-button:hover {
+  background: linear-gradient(135deg, #2980b9, #1a252f);
+  transform: translateY(-2px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .product-list {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+  
+  .section-title {
+    font-size: 1.8rem;
+  }
+}

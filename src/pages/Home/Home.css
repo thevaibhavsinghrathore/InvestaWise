@@ -1,0 +1,87 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(135deg, #3a7bd5, #00d2ff);
+  color: white;
+  padding: 1rem 5rem;
+  text-align: center;
+  height: 30rem;
+}
+.front-container {
+  align-items: center;
+  max-width: 1250px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.image-container {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.resized-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.hero h2 {
+  top: 4rem;
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+.features {
+  height: 13.5rem;
+  padding: 2rem 0;
+}
+
+.features h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.feature-list {
+  display: flex;
+  justify-content: space-around;
+  gap: 5rem;
+}
+
+.feature {
+  text-align: center;
+  max-width: 300px;
+}
+
+.feature h4 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.chat-section {
+  height: 44rem;
+  padding: 2rem 0;
+}
+
+.chat-section h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.product-section {
+  height: 42rem;
+  padding: 2rem 0;
+  background-color: #fff;
+}
+
+.product-section h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  color: #403535;
+}
